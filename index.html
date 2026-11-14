@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Душечка — пекарня в Ижевске</title>
+<meta name="description" content="Пекарня Душечка в Ижевске: свежий хлеб, пироги, самоварный чай. Ул. Цветочная, 12/1. Ежедневно с 08:00 до 20:00.">
+<meta name="theme-color" content="#f4ebdc">
+<link rel="preload" as="image" href="img/tea.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <a class="brand" href="#top">
+    <span class="brand__icon"><svg viewBox="0 0 64 64" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 38c0-12 8-22 20-22s20 10 20 22"/><path d="M12 38h40"/><path d="M22 20c2 4 2 8 0 12M32 16c2 5 2 10 0 16M42 20c-2 4-2 8 0 12"/></svg></span>
+    <span class="brand__text">Душечка<span class="brand__sub">пекарня</span></span>
+  </a>
+  <nav class="nav">
+    <a href="#menu">Меню</a>
+    <a href="#about">О пекарне</a>
+    <a href="#place">Адреса</a>
+  </nav>
+  <a class="header__phone" href="tel:+79124699426">+7 (912) 469-94-26</a>
+  <button class="burger-btn" id="burgerBtn" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-overlay__header">
+    <a class="brand" href="#top">
+      <span class="brand__icon"><svg viewBox="0 0 64 64" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 38c0-12 8-22 20-22s20 10 20 22"/><path d="M12 38h40"/><path d="M22 20c2 4 2 8 0 12M32 16c2 5 2 10 0 16M42 20c-2 4-2 8 0 12"/></svg></span>
+      <span class="brand__text">Душечка<span class="brand__sub">пекарня</span></span>
+    </a>
+    <button class="menu-overlay__close" id="menuClose" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <nav class="menu-overlay__links">
+    <a href="#menu"><small>01</small>Меню</a>
+    <a href="#about"><small>02</small>О пекарне</a>
+    <a href="#place"><small>03</small>Адреса</a>
+  </nav>
+  <div class="menu-overlay__foot">
+    <a class="menu-overlay__phone" href="tel:+79124699426">+7 (912) 469-94-26</a>
+    <span class="menu-overlay__addr">Ижевск, ул. Цветочная, 12/1 · ежедневно 08:00–20:00</span>
+  </div>
+</div>
+
+<main id="top">
+
+  <section class="hero">
+    <img class="hero__img" id="heroImg" src="img/tea.jpg" alt="Самовар и чай в пекарне Душечка" width="1600" height="1067" fetchpriority="high" decoding="async">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__tag">пекарня · Ижевск</p>
+      <h1 class="hero__title">Свежий хлеб,<br>тёплый чай<br>и <em>домашний уют</em></h1>
+      <p class="hero__sub">Чай из самовара и выпечка каждое утро. Место, где время замедляется.</p>
+    </div>
+  </section>
+
+  <section class="stack">
+    <a class="stack-card" href="#about" style="--i:0">
+      <img src="img/ok.jpg" alt="Интерьер пекарни Душечка" width="1600" height="1200" loading="lazy" decoding="async">
+      <div class="stack-card__overlay"></div>
+      <span class="stack-card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+      <div class="stack-card__content">
+        <p class="stack-card__num">01</p>
+        <h2 class="stack-card__title">О пекарне</h2>
+        <p class="stack-card__sub">Здесь пахнет как дома</p>
+      </div>
+      <span class="stack-card__dim"></span>
+    </a>
+    <a class="stack-card" href="#menu" style="--i:1">
+      <img src="img/tea.jpg" alt="Чай из самовара" width="1600" height="1067" loading="lazy" decoding="async">
+      <div class="stack-card__overlay"></div>
+      <span class="stack-card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+      <div class="stack-card__content">
+        <p class="stack-card__num">02</p>
+        <h2 class="stack-card__title">Чай из самовара</h2>
+        <p class="stack-card__sub">Травяные купажи по старинным рецептам</p>
+      </div>
+      <span class="stack-card__dim"></span>
+    </a>
+    <a class="stack-card" href="#place" style="--i:2">
+      <img src="img/stel.jpg" alt="Атмосфера пекарни" width="1600" height="900" loading="lazy" decoding="async">
+      <div class="stack-card__overlay"></div>
+      <span class="stack-card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+      <div class="stack-card__content">
+        <p class="stack-card__num">03</p>
+        <h2 class="stack-card__title">Атмосфера</h2>
+        <p class="stack-card__sub">Тихо, тепло, по-домашнему</p>
+      </div>
+      <span class="stack-card__dim"></span>
+    </a>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about__left">
+      <p class="about__eyebrow reveal">о нас</p>
+      <h2 class="about__title reveal" data-delay="1">Здесь пахнет<br>как дома</h2>
+    </div>
+    <div class="about__right">
+      <p class="about__text reveal">Мы — не просто пекарня. Мы место, где время замедляется, а воздух наполняется ароматом свежеиспечённого хлеба и горячего чая из самовара.</p>
+      <p class="about__text reveal" data-delay="1">Завариваем купажи на травах по старинным русским рецептам. Печём с раннего утра, чтобы к вашему приходу всё было тёплым и мягким.</p>
+      <ul class="about__marks reveal" data-delay="2">
+        <li>Чай из настоящего самовара</li>
+        <li>Свежая выпечка каждое утро</li>
+        <li>Тихо, тепло и по-домашнему</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="menu-section__head">
+      <p class="menu-section__eyebrow reveal">меню</p>
+      <h2 class="menu-section__title reveal" data-delay="1">Что попробовать</h2>
+    </div>
+    <div class="menu-section__cols">
+      <div class="menu-col reveal">
+        <h3 class="menu-col__title">Чай и самовар</h3>
+        <div class="menu-item"><div><b>Самоварный чай</b><span>купаж на травах из тульского самовара</span></div><em>на компанию</em></div>
+        <div class="menu-item"><div><b>Облепиховый чай</b><span>облепиха, цитрус, мёд</span></div><em>горячий</em></div>
+        <div class="menu-item"><div><b>Травяные купажи</b><span>по старинным рецептам</span></div><em>в наличии</em></div>
+      </div>
+      <div class="menu-col reveal" data-delay="1">
+        <h3 class="menu-col__title">Кофе</h3>
+        <div class="menu-item"><div><b>Эспрессо / Американо</b><span>классика на зерне</span></div><em>с собой</em></div>
+        <div class="menu-item"><div><b>Капучино / Латте</b><span>мягкая молочная пенка</span></div><em>горячий</em></div>
+        <div class="menu-item"><div><b>Горячий шоколад</b><span>густой и насыщенный</span></div><em>для холодных дней</em></div>
+      </div>
+      <div class="menu-col reveal" data-delay="2">
+        <h3 class="menu-col__title">Выпечка</h3>
+        <div class="menu-item"><div><b>Пирожки</b><span>свежие, из утренней печи</span></div><em>ежедневно</em></div>
+        <div class="menu-item"><div><b>Хлеб</b><span>на закваске, ржаной, пшеничный</span></div><em>свежий</em></div>
+        <div class="menu-item"><div><b>Пироги</b><span>большие, на компанию</span></div><em>под заказ</em></div>
+      </div>
+    </div>
+    <p class="menu-note reveal">Средний чек около 280 ₽ · актуальные цены — в группе ВКонтакте</p>
+  </section>
+
+  <section class="place" id="place">
+    <div>
+      <p class="place__eyebrow reveal">как найти</p>
+      <h2 class="place__title reveal" data-delay="1">Заходите на огонёк</h2>
+      <div class="place-row reveal"><small>Адрес</small><b>Ижевск, ул. Цветочная, 12/1</b><span class="sub">Устиновский район</span></div>
+      <div class="place-row reveal"><small>Часы</small><b>Ежедневно с 08:00 до 20:00</b><span class="place-status"><span class="dot js-dot"></span><span class="js-status">ежедневно 08:00–20:00</span></span></div>
+      <div class="place-row reveal"><small>Телефон</small><a href="tel:+79124699426">+7 (912) 469-94-26</a></div>
+      <div class="place-row reveal"><small>Группа</small><a href="https://vk.com/dyshechka_kafe" target="_blank" rel="noopener">vk.com/dyshechka_kafe</a></div>
+      <a class="place-btn reveal" href="https://vk.com/dyshechka_kafe" target="_blank" rel="noopener">Написать в группу</a>
+    </div>
+    <div class="place-map reveal" data-delay="1"><iframe src="https://yandex.ru/map-widget/v1/?text=Ижевск, ул. Цветочная, 12/1&z=17" title="Карта" loading="lazy"></iframe></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 38c0-12 8-22 20-22s20 10 20 22"/><path d="M12 38h40"/><path d="M22 20c2 4 2 8 0 12M32 16c2 5 2 10 0 16M42 20c-2 4-2 8 0 12"/></svg>
+        <span class="footer__brand-text">Душечка<span class="footer__brand-sub">пекарня</span></span>
+      </div>
+      <p class="footer__desc">Аромат свежеиспечённого хлеба и шум самовара — каждый день с восьми утра.</p>
+      <div class="footer__socials">
+        <a href="https://vk.com/dyshechka_kafe" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg viewBox="0 0 24 24"><path d="M12.785 16.241s.288-.032.436-.194c.136-.148.132-.427.132-.427s-.02-1.304.587-1.496c.598-.188 1.368 1.259 2.184 1.814.616.42 1.084.328 1.084.328l2.178-.03s1.14-.07.6-.964c-.045-.073-.318-.661-1.637-1.869-1.38-1.264-1.195-1.058.469-3.246.76-1.002 1.063-1.614.969-1.876-.09-.249-.658-.183-.658-.183l-2.453.015s-.182-.025-.317.056c-.132.079-.217.264-.217.264s-.388 1.032-.905 1.91c-1.09 1.852-1.527 1.95-1.706 1.834-.417-.27-.313-1.083-.313-1.66 0-1.804.274-2.557-.534-2.752-.268-.065-.465-.108-1.153-.115-.883-.009-1.63.003-2.052.21-.282.138-.5.445-.367.463.164.022.536.1.733.368.254.346.245 1.123.245 1.123s.146 2.142-.34 2.407c-.333.182-.79-.189-1.772-1.89-.503-.87-.883-1.832-.883-1.832s-.073-.18-.204-.276c-.158-.117-.378-.154-.378-.154l-2.333.015s-.35.01-.479.162c-.114.135-.009.414-.009.414s1.838 4.3 3.92 6.467c1.907 1.987 4.073 1.856 4.073 1.856h.982z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <p class="footer__section-title">Пекарня</p>
+      <div class="footer__addr"><b>ул. Цветочная, 12/1</b><span>08:00–20:00</span></div>
+    </div>
+    <div>
+      <p class="footer__section-title">Разделы</p>
+      <div class="footer__links">
+        <a href="#menu">Меню</a>
+        <a href="#about">О пекарне</a>
+        <a href="https://vk.com/dyshechka_kafe" target="_blank" rel="noopener">Группа ВКонтакте</a>
+      </div>
+    </div>
+    <div>
+      <p class="footer__section-title">Связаться</p>
+      <div class="footer__contact"><a href="tel:+79124699426">+7 (912) 469-94-26</a><span>бронь столика</span></div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year">2026</span> «Душечка», пекарня. Ижевск</span>
+    <a href="#top" class="footer__top">Наверх ↑</a>
+  </div>
+</footer>
+
+<div class="tabbar">
+  <a class="tabbar__btn tabbar__btn--primary" href="tel:+79124699426"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Позвонить</a>
+  <a class="tabbar__btn" href="#menu"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Меню</a>
+  <a class="tabbar__btn" href="#place"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Адреса</a>
+</div>
+
+<div class="cookie" id="cookie">
+  <p class="cookie__text"><b>Мы используем cookie.</b> Они помогают сайту работать корректно и делают его удобнее. Оставаясь здесь, вы соглашаетесь с их использованием.</p>
+  <div class="cookie__actions">
+    <button class="cookie__accept" id="cookieAccept">Принять</button>
+    <button class="cookie__close" id="cookieClose" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var doc = document;
+  var win = window;
+  var body = doc.body;
+  var reduce = win.matchMedia && win.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var burger = doc.getElementById('burgerBtn');
+  var overlay = doc.getElementById('menuOverlay');
+  var closeBtn = doc.getElementById('menuClose');
+
+  function setMenu(open) {
+    overlay.classList.toggle('open', open);
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    body.style.overflow = open ? 'hidden' : '';
+  }
+  if (burger && overlay && closeBtn) {
+    burger.addEventListener('click', function () {
+      setMenu(!overlay.classList.contains('open'));
+    });
+    closeBtn.addEventListener('click', function () { setMenu(false); });
+    overlay.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { setMenu(false); });
+    });
+    doc.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setMenu(false);
+    });
+  }
+
+  var reveals = doc.querySelectorAll('.reveal');
+  reveals.forEach(function (el) {
+    var d = parseInt(el.getAttribute('data-delay') || '0', 10);
+    el.style.setProperty('--d', (d * 0.1) + 's');
+  });
+  try {
+    doc.documentElement.classList.add('js');
+    if ('IntersectionObserver' in win && !reduce) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            en.target.classList.add('in');
+            io.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      reveals.forEach(function (el) { io.observe(el); });
+    } else {
+      reveals.forEach(function (el) { el.classList.add('in'); });
+    }
+  } catch (e) {
+    doc.documentElement.classList.remove('js');
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  var navLinks = doc.querySelectorAll('.nav a');
+  var pairs = [];
+  navLinks.forEach(function (a) {
+    var s = doc.querySelector(a.getAttribute('href'));
+    if (s) pairs.push({ a: a, s: s });
+  });
+  if ('IntersectionObserver' in win && pairs.length) {
+    var so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          pairs.forEach(function (p) {
+            p.a.classList.toggle('active', p.s === en.target);
+          });
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    pairs.forEach(function (p) { so.observe(p.s); });
+  }
+
+  var hero = doc.querySelector('.hero');
+  var heroImg = doc.getElementById('heroImg');
+  var stack = doc.querySelector('.stack');
+  var cards = [].slice.call(doc.querySelectorAll('.stack-card'));
+  var dims = cards.map(function (c) { return c.querySelector('.stack-card__dim'); });
+
+  var M = { heroH: 0, tops: [], heights: [], sticky: [] };
+  var cur = { hero: 0, p: cards.map(function () { return 0; }) };
+  var tgt = { hero: 0, p: cards.map(function () { return 0; }) };
+  var running = false;
+
+  function measure() {
+    if (hero) M.heroH = hero.offsetHeight;
+    if (!stack || !cards.length) return;
+    var y = win.scrollY || win.pageYOffset || 0;
+    var sr = stack.getBoundingClientRect();
+    var cs = getComputedStyle(stack);
+    var acc = sr.top + y + (parseFloat(cs.paddingTop) || 0);
+    var gap = parseFloat(cs.rowGap) || 22;
+    M.heights = cards.map(function (c) { return c.offsetHeight; });
+    M.sticky = cards.map(function (c, i) { return 22 + i * 18; });
+    M.tops = cards.map(function (c, i) {
+      var t = acc;
+      acc += M.heights[i] + gap;
+      return t;
+    });
+  }
+
+  function targets() {
+    var y = win.scrollY || win.pageYOffset || 0;
+    tgt.hero = Math.min(y, M.heroH) * 0.14;
+    for (var i = 0; i < cards.length - 1; i++) {
+      var nextTop = M.tops[i + 1] - y;
+      var p = (M.sticky[i] + M.heights[i] - nextTop) / M.heights[i];
+      tgt.p[i] = p < 0 ? 0 : p > 1 ? 1 : p;
+    }
+  }
+
+  function write() {
+    if (heroImg) heroImg.style.transform = 'translate3d(0,' + cur.hero.toFixed(2) + 'px,0)';
+    for (var i = 0; i < cards.length - 1; i++) {
+      var p = cur.p[i];
+      cards[i].style.transform = 'scale(' + (1 - p * 0.06).toFixed(4) + ')';
+      if (dims[i]) dims[i].style.opacity = (p * 0.38).toFixed(3);
+    }
+  }
+
+  function frame() {
+    var active = false;
+    cur.hero += (tgt.hero - cur.hero) * 0.14;
+    if (Math.abs(tgt.hero - cur.hero) > 0.05) active = true; else cur.hero = tgt.hero;
+    for (var i = 0; i < cards.length; i++) {
+      cur.p[i] += (tgt.p[i] - cur.p[i]) * 0.16;
+      if (Math.abs(tgt.p[i] - cur.p[i]) > 0.001) active = true; else cur.p[i] = tgt.p[i];
+    }
+    write();
+    if (active) requestAnimationFrame(frame); else running = false;
+  }
+
+  function kick() {
+    if (reduce) return;
+    targets();
+    if (!running) {
+      running = true;
+      requestAnimationFrame(frame);
+    }
+  }
+
+  var resizeRaf = 0;
+  function remeasure() {
+    cancelAnimationFrame(resizeRaf);
+    resizeRaf = requestAnimationFrame(function () {
+      measure();
+      targets();
+      cur.hero = tgt.hero;
+      cur.p = tgt.p.slice();
+      write();
+    });
+  }
+
+  if (!reduce && cards.length) {
+    measure();
+    targets();
+    cur.hero = tgt.hero;
+    cur.p = tgt.p.slice();
+    write();
+    win.addEventListener('scroll', kick, { passive: true });
+    win.addEventListener('resize', remeasure, { passive: true });
+    win.addEventListener('load', remeasure);
+    if (doc.fonts && doc.fonts.ready) doc.fonts.ready.then(remeasure);
+  }
+
+  function status() {
+    var now = new Date();
+    var h = now.getHours() + now.getMinutes() / 60;
+    var open = h >= 8 && h < 20;
+    var text = open ? 'Открыто · до 20:00' : 'Закрыто · откроемся в 08:00';
+    doc.querySelectorAll('.js-status').forEach(function (el) { el.textContent = text; });
+    doc.querySelectorAll('.js-dot').forEach(function (el) {
+      el.classList.toggle('is-open', open);
+      el.classList.toggle('is-closed', !open);
+    });
+  }
+  status();
+  setInterval(status, 60000);
+
+  var cookie = doc.getElementById('cookie');
+  var accepted = false;
+  try { accepted = localStorage.getItem('dushechka_cookie') === '1'; } catch (e) {}
+  if (cookie && !accepted) setTimeout(function () { cookie.classList.add('show'); }, 1400);
+  function hideCookie() {
+    if (cookie) cookie.classList.remove('show');
+    try { localStorage.setItem('dushechka_cookie', '1'); } catch (e) {}
+  }
+  var ca = doc.getElementById('cookieAccept');
+  var cc = doc.getElementById('cookieClose');
+  if (ca) ca.addEventListener('click', hideCookie);
+  if (cc) cc.addEventListener('click', hideCookie);
+
+  var year = doc.getElementById('year');
+  if (year) year.textContent = String(new Date().getFullYear());
+})();
+</script>
+</body>
+</html>
